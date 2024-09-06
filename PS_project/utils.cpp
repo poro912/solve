@@ -71,3 +71,7 @@ bool compare(pair<int, int> a, pair<int, int> b) {
 // 정렬 및 중복제거
 sort(unique_sort.begin(), unique_sort.end());
 unique_sort.erase(unique(unique_sort.begin(), unique_sort.end()), unique_sort.end());
+
+// 최대 최소 힙
+priority_queue<int, vector<int>, less<int>> max_heap;
+priority_queue<int, vector<int>, greater<int>> min_heap;
